@@ -1,0 +1,20 @@
+# Week 3 Nginx Configuration
+# Add this block to your nginx config file (usually /etc/nginx/sites-available/default)
+# Place it after the week2 location blocks
+
+    location = /week3 {
+        return 301 /week3/;
+    }
+
+    location /week3/ {
+        proxy_pass http://127.0.0.1:8503;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+# After adding, run:
+#   sudo nginx -t
+#   sudo systemctl reload nginx
