@@ -4,7 +4,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> A 6-week interactive data analysis portfolio built with **Streamlit**, covering everything from basic visualization to machine learning — designed to showcase practical data skills.
+> A 6-week interactive data analysis portfolio built with **Streamlit**, featuring **trained ML models** (Random Forest, Logistic Regression, K-Means, Factor Analysis) for regression, classification, and clustering — designed to showcase practical data science skills.
 
 ---
 
@@ -17,7 +17,7 @@
 | **3** | Correlation Analysis | Multi-stock correlations, heatmaps, scatter plots |
 | **4** | Statistical Analysis | Hypothesis testing (t-tests, χ²), effect sizes, confidence intervals |
 | **5** | Supervised ML | Regression & Classification (Linear, Logistic, Random Forest) |
-| **6** | Unsupervised ML | Clustering (K-Means, DBSCAN) & Factor Analysis |
+| **6** | Unsupervised ML | Clustering (K-Means, Hierarchical) & Factor Analysis |
 
 ---
 
@@ -36,7 +36,7 @@
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/data-visualization-portfolio.git
+git clone https://github.com/edan89/data-visualization-portfolio.git
 cd data-visualization-portfolio
 
 # 2. Create virtual environment
