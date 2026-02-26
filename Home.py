@@ -22,6 +22,13 @@ st.markdown("""
         color: #888;
         margin-top: 0;
     }
+    .hero-intro {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: #ccc;
+        max-width: 800px;
+        margin: 16px 0 8px 0;
+    }
     .week-card {
         background: linear-gradient(135deg, #1e1e2e, #2a2a3e);
         border-radius: 16px;
@@ -69,6 +76,18 @@ st.markdown("""
 # ── Hero Section ──
 st.markdown('<p class="hero-title">From Zero to Hero 🚀</p>', unsafe_allow_html=True)
 st.markdown('<p class="hero-subtitle">A 6-week journey through Data Science — from cloud setup to machine learning</p>', unsafe_allow_html=True)
+
+st.markdown("""
+<p class="hero-intro">
+This portfolio documents my hands-on progression through a Data Visualization course at OAMK 🇫🇮.
+Each week introduced a new layer of complexity — starting with 🌱 <strong>setting up a cloud environment and plotting population data</strong>,
+then diving into 📈 <strong>stock market time series</strong> with yfinance and interactive Plotly charts.
+From there, I explored 🔗 <strong>multi-stock correlation analysis</strong> using heatmaps, moved on to 🧪 <strong>statistical hypothesis testing</strong>
+(t-tests, chi-square, confidence intervals), and built my first 🤖 <strong>supervised ML models</strong> — Random Forest, Logistic Regression, and linear regression for prediction and classification.
+The journey culminates in 🦸 <strong>unsupervised learning</strong> — K-Means clustering, hierarchical analysis, and Factor Analysis to uncover hidden patterns in data.
+Built entirely with Python, Streamlit, Pandas, and Scikit-learn.
+</p>
+""", unsafe_allow_html=True)
 
 # ── Progress Bar ──
 st.markdown("---")
