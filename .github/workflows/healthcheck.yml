@@ -1,0 +1,13 @@
+name: System Health Check
+
+on:
+  schedule:
+    - cron: '0 */8 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Health Check
+        run: curl -s -o /dev/null -w "%{http_code}" https://data-visualization-portfoliogit-b489w24effconk6zfcwkin.streamlit.app/week5
